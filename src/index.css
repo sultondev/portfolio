@@ -1,3 +1,116 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: Clear Sans, Jost, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto, "sans-serif";
+}
+
+:root {
+  --glow-10: #B0FBBC;
+  --glow-20: #82f9a1;
+
+  --fav-clr: #82f;
+
+  --text-10: #ecf8ff;
+  --text-20: #c9e2f0;
+
+  --blue-10: #111a20;
+  --blue-20: #1c2c35;
+  --blue-30: #243b4a;
+  --blue-40: #416883;
+  --blue-50: #5e8ca7;
+
+  --dsk-header-1: 48px;
+  --dsk-header-2: 24px;
+  --dsk-body: 19px;
+
+  --mbl-header-1: 28px;
+  --mbl-header-2: 20px;
+  --mbl-body: 16px;
+
+  --gradient-blue-1: #80deea;
+  --gradient-blue-2: #39c1d7;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("assets/fonts/jost/Jost-Thin.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("assets/fonts/jost/Jost-ExtraLight.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("assets/fonts/jost/Jost-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("assets/fonts/jost/Jost-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("assets/fonts/jost/Jost-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("assets/fonts/jost/Jost-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("assets/fonts/jost/Jost-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("assets/fonts/jost/Jost-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+
+
+
+@font-face {
+  font-family: "Clear Sans";
+  src: url("assets/fonts/clear-sans/ClearSans-Thin.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Clear Sans";
+  src: url("assets/fonts/clear-sans/ClearSans-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Clear Sans";
+  src: url("assets/fonts/clear-sans/ClearSans-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Clear Sans";
+  src: url("assets/fonts/clear-sans/ClearSans-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Clear Sans";
+  src: url("assets/fonts/clear-sans/ClearSans-Bold.ttf");
+  font-weight: 700;
+}
+
