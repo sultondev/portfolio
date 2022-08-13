@@ -1,0 +1,8 @@
+.main-first__heading {
+    color: #2798f3;
+    transition: all 0.9s;
+}
+
+.main-first__heading:hover {
+  text-shadow: 0 0 20px;
+}
