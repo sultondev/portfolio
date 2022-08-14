@@ -2,7 +2,6 @@ import { useRecoilState } from "recoil";
 import { navBarDefaultStateData } from "../../recoil/atoms.state";
 import NavBar from "../NavBar/NavBar.component";
 import NavBarMob from "../NavBar/NavBarMob.component";
-import ThemeChanger from "../ThemeChanger/ThemeChanger.component";
 
 const Header = () => {
   const [menuState, setMenuState] = useRecoilState<string>(
