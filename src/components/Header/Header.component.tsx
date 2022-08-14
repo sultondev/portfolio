@@ -1,7 +1,6 @@
 import { useRecoilState } from "recoil";
 import { navBarDefaultStateData } from "../../recoil/atoms.state";
 import NavBar from "../NavBar/NavBar.component";
-import NavBarMob from "../NavBar/NavBarMob.component";
 
 const Header = () => {
   const [menuState, setMenuState] = useRecoilState<string>(
@@ -34,7 +33,6 @@ const Header = () => {
           &#60;<span className="md:inline ex-sm:hidden">SULTON</span>DEV/&#62;
         </h1>
         <NavBar />
-        <NavBarMob />
 
         <div className="md:hidden ex-sm:flex justify-center items-center">
           <button
