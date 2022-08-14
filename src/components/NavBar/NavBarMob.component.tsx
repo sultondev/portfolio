@@ -9,11 +9,11 @@ const NavBarMob = () => {
 
   return (
     <nav
-      className={`nav fixed w-full
+      className={`nav absolute w-full
     h-full
     md:hidden
     top-0
-    z-10
+    z-50
     ${menuState}
     `}
     >

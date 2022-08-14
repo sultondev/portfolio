@@ -1,0 +1,39 @@
+.message-wrapper__heading {
+  transition: all 0.5s;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+
+
+.message-wrapper{
+  padding: 10px;
+  background: blue;
+}
+.message-wrapper > .message-wrapper__before {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.message-wrapper > .message-wrapper__after {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+
+
+.message-wrapper:hover h6 {
+  transform-style: preserve-3d;
+  transform: rotateY(10deg) rotateX(-30deg);
+  text-shadow: -6px -6px rgba(255,255,255, 0.5);
+}  
+
+.message-wrapper:hover .message-wrapper__before {
+  opacity: 0;
+}
+
+
+.message-wrapper:hover .message-wrapper__after {
+  opacity: 1;
+}
+
