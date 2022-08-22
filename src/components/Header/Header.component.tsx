@@ -1,7 +1,7 @@
 import { useRecoilState } from "recoil";
 import { navBarDefaultStateData } from "../../recoil/atoms.state";
 import NavBar from "../NavBar/NavBar.component";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   const [menuState, setMenuState] = useRecoilState<string>(
     navBarDefaultStateData
@@ -21,7 +21,7 @@ const Header = () => {
   }
 
   return (
-    <header className="fixed top-0 w-full bg-gray-600/5 dark:bg-gray-600/5 backdrop-blur-md py-4">
+    <header className="fixed top-0 w-full bg-gray-600/30 dark:bg-gray-600/5 backdrop-blur-md py-4">
       <div
         className="container flex justify-between items-center mx-auto 
         ex-sm:px-4
@@ -29,9 +29,9 @@ const Header = () => {
         md:px-0
       "
       >
-        <h1 className="text-2xl dark:text-white ex-sm:font-bold">
+        <Link to="/" className="text-2xl dark:text-white ex-sm:font-bold">
           &#60;<span className="md:inline ex-sm:hidden">SULTON</span>DEV/&#62;
-        </h1>
+        </Link>
         <NavBar />
 
         <div className="md:hidden ex-sm:flex justify-center items-center">
