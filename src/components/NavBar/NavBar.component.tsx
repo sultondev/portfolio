@@ -9,10 +9,13 @@ const NavBar = () => {
     >
       <ul
         className="flex items-center dark:text-white 
+        gap-4
+        font-medium
         sm:text-lg
         sm:font-light
-        font-medium
-        ex-sm:gap-4
+        sm:gap-2
+        md:gap-4
+        xl:gap-6
       "
       >
         <li>

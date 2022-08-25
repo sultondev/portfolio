@@ -21,12 +21,13 @@ const Header = () => {
   }
 
   return (
-    <header className="fixed top-0 w-full bg-gray-600/30 dark:bg-gray-600/5 backdrop-blur-md py-4">
+    <header className="fixed top-0 w-full bg-gray-600/20 dark:bg-gray-600/5 backdrop-blur-md py-4">
       <div
         className="container flex justify-between items-center mx-auto 
         ex-sm:px-4
         sm:px-2
-        md:px-0
+        md:px-4
+        xl:px-4
       "
       >
         <Link to="/" className="text-2xl dark:text-white ex-sm:font-bold">
