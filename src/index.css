@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 * {
-  font-family: Clear Sans, Jost, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto, "sans-serif";
+  font-family: Poppins, Clear Sans, Jost, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto, "sans-serif";
 }
 
 :root {
@@ -20,6 +23,8 @@
   --blue-30: #243b4a;
   --blue-40: #416883;
   --blue-50: #5e8ca7;
+
+  --bg-clr-30: #263440;
 
   --dsk-header-1: 48px;
   --dsk-header-2: 24px;

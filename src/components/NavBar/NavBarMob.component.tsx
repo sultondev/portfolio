@@ -2,6 +2,7 @@ import { useRecoilState } from "recoil";
 import { navBarDefaultStateData } from "../../recoil/atoms.state";
 
 import ThemeChanger from "../ThemeChanger/ThemeChanger.component";
+import { Link } from "react-router-dom";
 const NavBarMob = () => {
   const [menuState, setMenuState] = useRecoilState<string>(
     navBarDefaultStateData
@@ -9,7 +10,7 @@ const NavBarMob = () => {
 
   return (
     <nav
-      className={`nav absolute w-full
+      className={`nav fixed w-full
     h-full
     md:hidden
     top-0
@@ -58,11 +59,21 @@ const NavBarMob = () => {
         ex-sm:gap-4
         "
         >
-          <li>Home</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/skills">Skills</Link>
+          </li>
+          <li>
+            <Link to="/projects">Projects</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
         <div>
           <ThemeChanger />

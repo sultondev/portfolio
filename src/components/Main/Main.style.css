@@ -3,6 +3,42 @@
     transition: all 0.9s;
 }
 
+
+
 .main-first__heading:hover {
   text-shadow: 0 0 20px;
+}
+
+.picture-wrapper__blob {
+  right: 0;
+  top: 0;
+}
+
+.picture-wrapper__img {
+  border-radius: 10% 10% 10% 10% / 10% 40% 10% 20%;
+  animation-name: blub-anim;
+  animation-duration: 15s;
+  animation-iteration-count: infinite; 
+}
+
+/* 111% 23% 126% 53% / 54% 79% 50% 94% */
+
+@keyframes blub-anim {
+  0% {
+    border-radius: 32% 25% 27% 27% / 25% 67% 18% 31%;
+  }
+  20% {
+    border-radius: 60% 10% 90% 60% / 60% 20% 80% 92%;
+  }
+  50% {
+    border-radius: 111% 23% 126% 53% / 54% 79% 50% 94%;
+  }
+
+  80% {
+    border-radius: 60% 10% 90% 60% / 60% 20% 80% 92%;
+  }
+
+  100% {
+    border-radius: 32% 25% 27% 27% / 25% 67% 18% 31%;
+  }
 }
