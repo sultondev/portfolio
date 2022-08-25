@@ -20,19 +20,22 @@ const Main = () => {
         <div
           className="flex flex-col justify-around items-start py-10 
           md:min-h-[200px]
-        md:basis-1/2
-        ex-sm:gap-10
-        ex-sm:min-h-[400px]
-        md:gap-6
+          md:basis-1/2
+          ex-sm:gap-10
+          ex-sm:min-h-[400px]
+          md:gap-6
+          2xl:gap-20
         "
         >
           <h2
             className="
-            ex-sm:text-center
-            ex-sm:text-xl
+            ex-sm:text-center ex-sm:px-2
+            ex-sm:text-xl 
             md:text-justify
             lg:text-2xl
             md:text-lg
+            xl:text-3xl
+            2xl:text-4xl
             "
           >
             Hi there 👋, I{`'`}m Sultan.{" "}
@@ -47,6 +50,8 @@ const Main = () => {
           md:text-sm
           ex-sm:text-center
           ex-sm:text-base
+          xl:text-xl
+          2xl:text-2xl
           "
           >
             I specialize in rapidly prototyping software companies and web
@@ -84,18 +89,19 @@ const Main = () => {
             className="picture-wrapper__blob 
             w-[700px] h-[700px]
           2xl:w-[700px] 2xl:h-[700px] 
-          xl:w-[660px] 
           lg:w-[500px] lg:h-[600px]  
-          md:w-[300px] md:h-[400px]  
+          md:w-[300px] md:h-[400px]
+          xl:w-[600px] xl:h-[400px]
           flex justify-center items-center"
           >
             <img
               src={selfImage}
               className="picture-wrapper__img relative z-10 
               2xl:w-[400px] 
-              lg:w-[260px]
-              md:w-[220px]  
               ex-sm:w-[200px]
+              md:w-[220px]  
+              lg:w-[260px]
+              xl:w-[360px]
               "
               alt=""
             />
@@ -117,16 +123,29 @@ const Main = () => {
       </div>
       {/* articels */}
       <div
-        className="container mx-auto h-[40vh] dark:text-white 
+        className="container mx-auto h-[20vh] dark:text-white 
         ex-sm:px-2 ex-sm:my-4 ex-sm:min-h-[300px]
         xl:px-4
       "
       >
         <div className="flex w-full justify-between">
-          <h2 className="ex-sm:text-xl md:font-light ex-sm:text-center ex-sm:font-medium">
+          <h2
+            className="
+          ex-sm:text-xl 
+          ex-sm:text-center 
+          ex-sm:font-medium
+          md:font-light
+          xl:text-2xl xl:font-normal 
+          "
+          >
             Latest Articles
           </h2>
-          <Link to="/articles" className="">
+          <Link
+            to="/articles"
+            className="
+          xl:text-2xl xl:font-normal 
+          "
+          >
             All articles &gt;&gt;
           </Link>
         </div>
@@ -181,6 +200,7 @@ const Main = () => {
           ex-sm:text-left 
           ex-sm:font-medium
           md:font-light 
+          xl:text-2xl xl:font-normal 
           "
           >
             Projects

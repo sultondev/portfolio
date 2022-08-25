@@ -15,7 +15,7 @@ const NavBar = () => {
         sm:font-light
         sm:gap-2
         md:gap-4
-        xl:gap-6
+        xl:gap-6 xl:text-xl
       "
       >
         <li>

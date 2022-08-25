@@ -19,13 +19,14 @@ const NavBarMob = () => {
     `}
     >
       <div
-        className="flex flex-col 
-        justify-between
+        className="flex flex-col
         items-start
         h-screen
         bg-[#243b4a]
         dark:bg-[#111a20]
         p-4
+        gap-40
+        relative
         "
       >
         <button
@@ -52,7 +53,7 @@ const NavBarMob = () => {
         <ul
           className="
         flex flex-col
-        text-black
+        text-white
         font-bold
         text-2xl   
         dark:text-white
@@ -75,7 +76,7 @@ const NavBarMob = () => {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
-        <div>
+        <div className="absolute right-5 top-[10px]">
           <ThemeChanger />
         </div>
       </div>
