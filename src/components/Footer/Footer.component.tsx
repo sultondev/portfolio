@@ -1,6 +1,6 @@
 import githubIcon from "../../assets/icons/social-media/GitHub.svg";
 import instagramIcon from "../../assets/icons/social-media/Instagram.svg";
-import twitterIcon from "../../assets/icons/social-media/Twitter.svg";
+import twitterIcon from "../../assets/icons/social-media/twitter.svg";
 import "./Footer.style.css";
 const Footer = () => {
   return (
