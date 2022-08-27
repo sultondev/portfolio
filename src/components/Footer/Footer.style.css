@@ -1,0 +1,20 @@
+.footer-social__github:hover span{
+  background-color: #575757;
+}
+.footer-social__instagram:hover span{
+  background-color: #eb072f;
+}
+.footer-social__twitter:hover span{
+  background-color: #00c1c1;
+}
+
+
+.footer-social__links {
+  transition: 0.3s linear;
+}
+
+
+.footer-social__links span {
+  transition: 0.3s linear;
+}
+

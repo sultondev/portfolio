@@ -42,3 +42,9 @@
     border-radius: 32% 25% 27% 27% / 25% 67% 18% 31%;
   }
 }
+
+.main-welcome {
+  background: center bottom/cover no-repeat;
+  /*background-image: url("./pixels-neon.gif"); */
+}
+
