@@ -7,21 +7,12 @@ const Main = () => {
   return (
     <main className="main">
       <div className="main-welcome dark:bg-[url('./pixels-neon.gif')] w-full relative">
-        {/* <video
-          autoPlay
-          muted
-          loop
-          id="myVideo"
-          className="absolute top-0 w-screen h-full z-[1]"
-        >
-          <source src="pixels-neon.mp4" type="video/mp4" />
-        </video> */}
-        {/* <img
-          src="pixels-neon.gif"
-          alt=""
-          className="absolute top-0 w-screen h-screen z-[1] bg-neutral-100/70"
-        /> */}
-        <div className="absolute top-0 w-screen h-full z-[1] dark:bg-gradient-to-b dark:from-black/40 dark:to-black/80"></div>
+        <div
+          className="absolute top-0 w-screen h-full z-[1] dark:bg-gradient-to-b  
+        ex-sm:dark:from-black/20 ex-sm:dark:to-black/40
+          md:dark:from-black/40 md:dark:to-black/90
+        "
+        ></div>
         <div
           className="container dark:text-white  flex
           relative
@@ -49,7 +40,7 @@ const Main = () => {
               className="
             ex-sm:text-center ex-sm:px-2
             ex-sm:text-xl 
-            md:text-justify
+            md:text-left
             lg:text-2xl
             md:text-lg
             xl:text-3xl
@@ -142,7 +133,9 @@ const Main = () => {
       </div>
       {/* articels */}
       <div
-        className="container mx-auto h-[20vh] dark:text-white 
+        className="container mx-auto h-[20vh] 
+        my-20
+        dark:text-white 
         ex-sm:px-2 ex-sm:my-4 ex-sm:min-h-[300px]
         xl:px-4
       "
@@ -162,7 +155,7 @@ const Main = () => {
           <Link
             to="/articles"
             className="
-          xl:text-2xl xl:font-normal 
+          xl:text-2xl xl:font-normal           
           "
           >
             All articles &gt;&gt;

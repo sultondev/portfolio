@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <div className="relative min-h-[64px] z-30">
-      <header className="fixed z-50 top-0 w-full backdrop-blur-xl bg-gray-600/20 dark:bg-gray-600/30 dark:backdrop-brightness-50 py-4">
+      <header className="fixed z-50 top-0 w-full backdrop-blur-sm bg-gray-600/20 dark:bg-gray-600/30 dark:backdrop-brightness-50 py-4">
         <div
           className="container flex justify-between items-center mx-auto 
         ex-sm:px-4
