@@ -4,6 +4,10 @@ module.exports = {
   content: ["./src/components/**/*.{js,jsx,ts,tsx}"],
   darkMode: "class",
   theme: {
+    fontFamily: {
+      mono: ["ui-monospace", "SFMono-Regular"],
+      body: ['"SF Mono"', "Poppins", '"Open Sans"'],
+    },
     screens: {
       "ex-sm": "320px",
       sm: "640px",
