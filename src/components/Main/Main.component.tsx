@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
-    <main className="main">
+    <main className="main font-body">
       <div className="main-welcome dark:bg-[url('../pixels-neon.gif')] w-full relative">
         <div
           className="absolute top-0 w-screen h-full z-[1] dark:bg-gradient-to-b  
-        ex-sm:dark:from-black/20 ex-sm:dark:to-black/40
+        ex-sm:dark:from-black/30 ex-sm:dark:to-black/60
           md:dark:from-black/40 md:dark:to-black/90
         "
         ></div>
