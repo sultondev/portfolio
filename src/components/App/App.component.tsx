@@ -22,7 +22,7 @@ function App() {
   }
 
   return (
-    <div className="app dark:bg-[#020A13] transition duration-500 min-h-screen overflow-hidden flex flex-col justify-between">
+    <div className="app md:dark:bg-[#020A13] ex-sm:dark:bg-[#1C2C35] transition duration-500 min-h-screen overflow-hidden flex flex-col justify-between">
       {/* Header */}
       <Header />
       {/* Navbar mobile size */}
