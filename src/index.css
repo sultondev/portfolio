@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(//db.onlinewebfonts.com/c/c8da3c58be0ab862c24357279216fe05?family=SF+Mono);
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +7,8 @@
 
 
 * {
-  font-family: Poppins, Clear Sans, Jost, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto, "sans-serif";
+  font-family: 'SF Mono Light', 'SF Mono' , Poppins, Clear Sans, Jost, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto, "sans-serif";
+  letter-spacing: 0.1px;
 }
 
 :root {
@@ -37,6 +39,9 @@
   --gradient-blue-1: #80deea;
   --gradient-blue-2: #39c1d7;
 }
+
+
+/* Clear Sans */
 
 @font-face {
   font-family: "Jost";
@@ -118,4 +123,7 @@
   src: url("assets/fonts/clear-sans/ClearSans-Bold.ttf");
   font-weight: 700;
 }
+
+
+/* SF mono */
 
