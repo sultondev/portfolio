@@ -1,3 +1,4 @@
+// import Knowledge from "../Knowledge/Knowledge.component";
 import "./Main.style.css";
 import selfImage from "../../assets/images/DEVeloper.png";
 import reactIcon from "../../assets/icons/technologies/React.svg";
@@ -54,7 +55,7 @@ const Main = () => {
             </h2>
             <p
               className="text-xl 
-            md:text-justify 
+            md:text-left
           lg:text-base
           md:text-sm
           ex-sm:text-center
@@ -97,11 +98,11 @@ const Main = () => {
             <div
               className="picture-wrapper__blob 
             w-[700px] h-[700px]
-          2xl:w-[700px] 2xl:h-[700px] 
-          lg:w-[500px] lg:h-[600px]  
-          md:w-[300px] md:h-[400px]
-          xl:w-[600px] xl:h-[400px]
-          flex justify-center items-center"
+            2xl:w-[700px] 2xl:h-[700px] 
+            lg:w-[500px] lg:h-[600px]  
+            md:w-[300px] md:h-[400px]
+            xl:w-[600px] xl:h-[400px]
+            flex justify-center items-center"
             >
               <img
                 src={selfImage}
@@ -133,21 +134,21 @@ const Main = () => {
       </div>
       {/* articels */}
       <div
-        className="container mx-auto h-[20vh] 
-        my-20
+        className="container mx-auto h-[20vh]
+        md:my-20
         dark:text-white 
         ex-sm:px-2 ex-sm:my-4 ex-sm:min-h-[300px]
         xl:px-4
       "
       >
-        <div className="flex w-full justify-between">
+        <div className="flex items-center w-full justify-between">
           <h2
             className="
-          ex-sm:text-xl 
+          ex-sm:text-base
           ex-sm:text-center 
           ex-sm:font-medium
           md:font-light
-          xl:text-2xl xl:font-normal 
+          xl:text-xl xl:font-normal 
           "
           >
             Latest Articles
@@ -155,10 +156,17 @@ const Main = () => {
           <Link
             to="/articles"
             className="
-          xl:text-2xl xl:font-normal           
+          xl:text-xl xl:font-normal
+          animate-pulse
+          ex-sm:text-xs
+
           "
           >
-            All articles &gt;&gt;
+            All articles
+            <span className="ml-2 ex-sm:text-xs md:text-lg duration-100">
+              &gt;
+            </span>
+            <span className="ex-sm:text-xs md:text-lg duration-200">&gt;</span>
           </Link>
         </div>
         <ul className="flex flex-col gap-10 justify-between my-10 xl:px-0 ex-sm:px-4">
@@ -198,7 +206,7 @@ const Main = () => {
         </ul>
       </div>
       {/* <!-- projects --> */}
-      <div
+      {/* <div
         className="container mx-auto 
         ex-sm:px-2
         xl:px-4
@@ -221,7 +229,8 @@ const Main = () => {
         <ul className="">
           <li className=""></li>
         </ul>
-      </div>
+      </div> */}
+      {/* <Knowledge /> */}
     </main>
   );
 };
