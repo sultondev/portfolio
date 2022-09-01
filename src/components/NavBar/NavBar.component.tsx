@@ -28,18 +28,18 @@ const NavBar = () => {
           <Link to="/skills">Skills</Link>
         </li> */}
         <li>
+          <Link to="/about" className="md:text-base  dark:hover:text-[#64ffda]">
+            <span className="text-sm text-black dark:text-[#64ffda]">02.</span>{" "}
+            Articles
+          </Link>
+        </li>
+        <li>
           <Link
             to="/projects"
             className="md:text-base  dark:hover:text-[#64ffda]"
           >
-            <span className="text-sm text-black dark:text-[#64ffda]">02.</span>{" "}
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link to="/about" className="md:text-base  dark:hover:text-[#64ffda]">
             <span className="text-sm text-black dark:text-[#64ffda]">03.</span>{" "}
-            About
+            Projects
           </Link>
         </li>
         <li>

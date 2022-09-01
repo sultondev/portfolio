@@ -1,19 +1,25 @@
 import Logo from "../../../assets/images/logo/logo-1.png";
 import { DotArrow } from "../../Templates/DotArrow/DotArrow.template";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
-    <section className="text-black dark:text-white transition-all duration-700">
+    <section
+      className="text-black dark:text-white transition-all duration-700 
+          h-screen min-h-[820px]
+          flex justify-center items-center
+    "
+    >
       <div
-        className="container 
-          mx-auto my-20 xl:max-w-[900px]
+        className="container
+          mx-auto xl:max-w-[900px]
           text-xl
           xl:block xl:px-4
           ex-sm:px-2 ex-sm:max-w-[510px]
           ex-sm:flex ex-sm:flex-col
         "
       >
-        <h3 className="relative flex items-center md:text-xl  gap-4">
+        <h3 className="relative flex items-center md:text-xl gap-4">
           <div className="">
             <span className="text-black dark:text-[#64ffda] ">01.</span>{" "}
             <span className="font-bold md:text-2xl">AboutMe</span>
@@ -64,6 +70,12 @@ const AboutMe = () => {
                 <DotArrow /> Git & Github
               </li>
             </ul>
+            <Link
+              to="/about"
+              className="text-black dark:text-gray-600 md:text-base underline underline-offset-2"
+            >
+              More info
+            </Link>
           </div>
           <span className="mx-auto w-auto h-auto relative">
             <img
