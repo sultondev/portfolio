@@ -8,8 +8,7 @@ export const Articles = () => {
         className="container mx-auto h-[20vh]
         max-w-[900px]
       dark:text-white 
-        md:my-20
-        ex-sm:px-2 ex-sm:my-16 ex-sm:min-h-[300px]
+        ex-sm:px-2 ex-sm:min-h-[300px]
         xl:px-4
       "
       >
@@ -69,8 +68,8 @@ export const Articles = () => {
           className="
           xl:text-xl xl:font-normal
           animate-pulse
-          ex-sm:text-xs
-
+          ex-sm:text-base
+          underline underline-offset-2
           "
         >
           More articles

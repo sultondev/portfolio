@@ -6,8 +6,10 @@ const AboutMe = () => {
   return (
     <section
       className="text-black dark:text-white transition-all duration-700 
-          h-screen min-h-[820px]
+          h-screen 
           flex justify-center items-center
+          md:min-h-[820px]
+          ex-sm:min-h-[1200px] 
     "
     >
       <div
@@ -26,7 +28,7 @@ const AboutMe = () => {
           </div>
           <span className="w-1/3 h-[1px] bg-gray-500"></span>
         </h3>
-        <div className="flex flex-wrap-reverse my-10 gap-14 lg:flex-row ex-sm:flex-col-reverse">
+        <div className="flex flex-wrap-reverse mt-10 gap-14 lg:flex-row ex-sm:flex-col-reverse">
           <div
             className="flex flex-col gap-4 max-w-[510px] 
           xl:text-base
