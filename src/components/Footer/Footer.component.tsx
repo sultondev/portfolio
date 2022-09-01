@@ -4,7 +4,7 @@ import twitterIcon from "../../assets/icons/social-media/twitter.svg";
 import "./Footer.style.css";
 const Footer = () => {
   return (
-    <footer className="footer my-2">
+    <footer className="footer my-2 relative z-50 bg-inherit">
       <div className="w-[80%] h-[2px] bg-gray-600 mx-auto my-2"></div>
       <div
         className="container mx-auto 

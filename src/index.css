@@ -26,6 +26,9 @@
   --blue-40: #416883;
   --blue-50: #5e8ca7;
 
+
+  --green: #64ffda;
+
   --bg-clr-30: #263440;
 
   --dsk-header-1: 48px;
@@ -38,6 +41,8 @@
 
   --gradient-blue-1: #80deea;
   --gradient-blue-2: #39c1d7;
+  --gradient-blue-3: #85d8e7;
+  --gradient-blue-4: linear-gradient(to right, rgba(0,254,255,0.9), rgba(0,212,255,0.7));
 }
 
 
