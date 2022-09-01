@@ -22,12 +22,12 @@ function App() {
   }
 
   return (
-    <div className="app md:dark:bg-[#020A13] ex-sm:dark:bg-[#1C2C35] transition duration-500 min-h-screen overflow-hidden flex flex-col justify-between">
+    <div className="app bg-white md:dark:bg-[#020A13] ex-sm:dark:bg-[#1C2C35] transition duration-500 min-h-screen overflow-hidden flex flex-col justify-between">
       {/* Header */}
       <Header />
       {/* Navbar mobile size */}
       <NavBarMob />
-      <div className="ex-sm:hidden md:block fixed right-3 bottom-3">
+      <div className="ex-sm:hidden md:block fixed z-10 right-3 bottom-3">
         <ThemeChanger />
       </div>
       <Routes>

@@ -20,8 +20,8 @@ const NavBar = () => {
       >
         <li>
           <Link to="/" className="md:text-base  dark:hover:text-[#64ffda]">
-            <span className="text-sm text-black dark:text-[#64ffda]">1.</span>{" "}
-            Home
+            <span className="text-sm text-black dark:text-[#64ffda]">01.</span>{" "}
+            About
           </Link>
         </li>
         {/* <li>
@@ -32,13 +32,13 @@ const NavBar = () => {
             to="/projects"
             className="md:text-base  dark:hover:text-[#64ffda]"
           >
-            <span className="text-sm text-black dark:text-[#64ffda]">2.</span>{" "}
+            <span className="text-sm text-black dark:text-[#64ffda]">02.</span>{" "}
             Projects
           </Link>
         </li>
         <li>
           <Link to="/about" className="md:text-base  dark:hover:text-[#64ffda]">
-            <span className="text-sm text-black dark:text-[#64ffda]">3.</span>{" "}
+            <span className="text-sm text-black dark:text-[#64ffda]">03.</span>{" "}
             About
           </Link>
         </li>
@@ -47,7 +47,7 @@ const NavBar = () => {
             to="/contact"
             className="md:text-base  dark:hover:text-[#64ffda]"
           >
-            <span className="text-sm text-black dark:text-[#64ffda]">4.</span>{" "}
+            <span className="text-sm text-black dark:text-[#64ffda]">04.</span>{" "}
             Contact
           </Link>
         </li>

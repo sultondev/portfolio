@@ -61,7 +61,7 @@ const NavBarMob = () => {
         "
         >
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">About</Link>
           </li>
           <li>
             <Link to="/skills">Skills</Link>
