@@ -1,8 +1,9 @@
 import { useRecoilState } from "recoil";
 import { navBarDefaultStateData } from "../../recoil/atoms.state";
-
-import ThemeChanger from "../ThemeChanger/ThemeChanger.component";
 import { Link } from "react-router-dom";
+import ThemeChanger from "../ThemeChanger/ThemeChanger.component";
+import NavBarData from "../../data/components/NavBar/NavBar.data";
+
 const NavBarMob = () => {
   const [menuState, setMenuState] = useRecoilState<string>(
     navBarDefaultStateData
@@ -60,21 +61,17 @@ const NavBarMob = () => {
         ex-sm:gap-4
         "
         >
-          <li>
-            <Link to="/">About</Link>
-          </li>
-          <li>
-            <Link to="/skills">Skills</Link>
-          </li>
-          <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
+          {NavBarData &&
+            NavBarData.map((data: string, index: number) => {
+              return (
+                <li key={data + index + "dwajl"}>
+                  <span className="text-xl text-black dark:text-[#64ffda]">
+                    0{index}.
+                  </span>{" "}
+                  <Link to={"/" + data.toLowerCase()}>{data}</Link>
+                </li>
+              );
+            })}
         </ul>
         <div className="absolute right-5 top-[10px]">
           <ThemeChanger />

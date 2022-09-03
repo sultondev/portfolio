@@ -47,6 +47,84 @@
 
 /* 111% 23% 126% 53% / 54% 79% 50% 94% */
 
+
+
+
+
+
+.experience-list {
+  align-items: flex-start;
+  max-width: 200px;
+  position: relative;
+}
+
+.experience-list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: var(--active-top);
+  height: var(--before-height);
+  background-color: var(--green);
+  transition: 0.2s all ease-in-out;
+}
+
+.experience-list__item {
+  width: 100%;
+}
+
+.experience-list__btn {
+  transition: 0.4s all;
+  width: 100%;
+  text-align: left;
+  border-left: 2px solid var(--gray-30);
+}
+
+
+.experience-list__btn-active {
+  color: var(--green);
+  border-left: 2px solid var(--gray-30);
+}
+
+.experience-data__header-role{
+  color: var(--lightest-slate);
+}
+
+.experience-data__header-at {
+  color: var(--green);
+}
+
+.experience-data__header-link {
+  color: var(--green);
+  position: relative;
+}
+
+.experience-data__header-link::before {
+  content: "";
+  width: 0%;
+  height: 0px;
+  position: absolute;
+  background: none;
+  top: 20px;
+  left: 0;
+  transition: 0.5s all;
+}
+
+.experience-data__header-link:hover::before {
+  width: 100%;
+  height: 1px;
+  background: var(--green);
+  top: 20px;
+  left: 0;
+}
+
+.experience-data__start, .experience-data__end  {
+  color: var(--light-slate);
+}
+
+.experience-data__resps {
+  color: var(--light-slate);
+}
+
 @keyframes blub-anim {
   0% {
     border-radius: 32% 25% 27% 27% / 25% 67% 18% 31%;

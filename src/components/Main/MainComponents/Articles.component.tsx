@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Articles = () => {
   return (
-    <section className="h-[70vh] min-h-[500px] flex justify-center items-center">
+    <section className="h-[50vh] min-h-[400px] flex justify-center items-start">
       <div
         className="container mx-auto h-[20vh]
         max-w-[900px]
@@ -14,7 +14,7 @@ export const Articles = () => {
       >
         <h3 className="relative flex items-center md:text-xl gap-4">
           <div className="">
-            <span className="text-black dark:text-[#64ffda]">02.</span>{" "}
+            <span className="text-black dark:text-[#64ffda]">03.</span>{" "}
             <span className="font-bold md:text-2xl">LatestArticles</span>
           </div>
           <span className="w-1/3 h-[1px] bg-gray-500"></span>
