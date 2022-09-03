@@ -3,20 +3,26 @@ import "./App.style.css";
 import Main from "../Main/Main.component";
 import ThemeChanger from "../ThemeChanger/ThemeChanger.component";
 import NavBarMob from "../NavBar/NavBarMob.component";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { loadingSpinnerStateData } from "../../recoil/atoms.state";
 import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner.component";
 import { useEffect } from "react";
 import Footer from "../Footer/Footer.component";
 import { NotFound } from "../NotFound/NotFound.component";
+
 function App() {
   const [loading, setLoading] = useRecoilState(loadingSpinnerStateData);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     setLoading(false);
   }, [loading, setLoading]);
 
+  if (location.pathname === "/home") {
+    navigate("/", { replace: true });
+  }
   if (loading) {
     return <LoadingSpinner />;
   }

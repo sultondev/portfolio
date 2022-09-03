@@ -1,5 +1,6 @@
 import { atom } from "recoil";
-import { LoadingSpinner } from "../components/LoadingSpinner/LoadingSpinner.component";
+import ExperienceData from "../data/components/Experience/Experience.data";
+import { ExperienceProps } from "../typing/types/Experience.type";
 
 export const navBarDefaultStateData = atom<string>({
   key: "navBarDefaultStateData",
@@ -9,4 +10,9 @@ export const navBarDefaultStateData = atom<string>({
 export const loadingSpinnerStateData = atom<boolean>({
   key: "loadingSpinnerStateData",
   default: true,
+});
+
+export const selectedCompanyStateData = atom<ExperienceProps>({
+  key: "selectedCompanyStateData",
+  default: ExperienceData[0],
 });

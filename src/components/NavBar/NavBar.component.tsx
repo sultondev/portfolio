@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import NavBarData from "../../data/components/NavBar/NavBar.data";
 
 const NavBar = () => {
   return (
@@ -18,39 +19,22 @@ const NavBar = () => {
         xl:gap-6 xl:text-xl
       "
       >
-        <li>
-          <Link to="/" className="md:text-base  dark:hover:text-[#64ffda]">
-            <span className="text-sm text-black dark:text-[#64ffda]">01.</span>{" "}
-            About
-          </Link>
-        </li>
-        {/* <li>
-          <Link to="/skills">Skills</Link>
-        </li> */}
-        <li>
-          <Link to="/about" className="md:text-base  dark:hover:text-[#64ffda]">
-            <span className="text-sm text-black dark:text-[#64ffda]">02.</span>{" "}
-            Articles
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/projects"
-            className="md:text-base  dark:hover:text-[#64ffda]"
-          >
-            <span className="text-sm text-black dark:text-[#64ffda]">03.</span>{" "}
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/contact"
-            className="md:text-base  dark:hover:text-[#64ffda]"
-          >
-            <span className="text-sm text-black dark:text-[#64ffda]">04.</span>{" "}
-            Contact
-          </Link>
-        </li>
+        {NavBarData &&
+          NavBarData.map((data: string, index: number) => {
+            return (
+              <li key={data + index}>
+                <Link
+                  to={"/" + data.toLowerCase()}
+                  className="md:text-xs  dark:hover:text-[#64ffda]"
+                >
+                  <span className="text-sm text-black dark:text-[#64ffda]">
+                    0{index}.
+                  </span>{" "}
+                  {data}
+                </Link>
+              </li>
+            );
+          })}
       </ul>
     </nav>
   );
