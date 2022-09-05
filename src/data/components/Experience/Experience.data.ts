@@ -18,8 +18,8 @@ const ExperienceData = [
   {
     companyName: "Ratio digital",
     responsibilities: [
-      "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass,",
-      "Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness",
+      "Creating new websites by using modern technologies like React JS, TypeScript, and Styled-components",
+      "Colloborating with back-end developers to get projects done",
     ],
     comment: `I’m resposible for development of landing pages for clients sites, and here my
             main tasks are creating new websites by using modern technologies and improvement of 
@@ -34,7 +34,7 @@ const ExperienceData = [
   {
     companyName: "IT PROSTO",
     responsibilities: [
-      "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass,",
+      "Developed and maintained code for in-house and client websites primarily using React JS",
       "Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness",
     ],
     comment: `I’m resposible for development of landing pages for clients sites, and here my
@@ -43,7 +43,7 @@ const ExperienceData = [
     `,
     startDate: "2021/06",
     endDate: "2022/04",
-    linkForCompany: "https://global.ratio.digital/",
+    linkForCompany: "https://it-prosto.com/",
     jobRole: "Front-End Engineer",
     id: 3,
   },

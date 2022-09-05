@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url(//db.onlinewebfonts.com/c/c8da3c58be0ab862c24357279216fe05?family=SF+Mono);
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://db.onlinewebfonts.com/c/c8da3c58be0ab862c24357279216fe05?family=SF+Mono");
 
 
 * {
   font-family: 'SF Mono', Poppins, Clear Sans, Jost, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto, "sans-serif", monospace;
   letter-spacing: 0.1px;
+  font-weight: 400;
 }
 
 :root {
@@ -55,6 +56,7 @@
   --gradient-blue-2: #39c1d7;
   --gradient-blue-3: #85d8e7;
   --gradient-blue-4: linear-gradient(to right, rgba(0,254,255,0.9), rgba(0,212,255,0.7));
+
 }
 
 

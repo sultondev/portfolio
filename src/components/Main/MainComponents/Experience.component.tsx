@@ -21,7 +21,7 @@ export const Experience = () => {
         </h3>
         <div className="flex md:flex-row ex-sm:items-center md:items-start ex-sm:flex-col md:gap-4 ex-sm:gap-6 my-10">
           <ul
-            className={`experience-list min-w-[180px] h-fit flex flex-col relative before:w-[2px]`}
+            className={`experience-list min-w-[180px] h-fit flex flex-col relative dark:before:w-[2px] `}
             style={
               {
                 "--active-top": `${caclTop(
@@ -39,12 +39,18 @@ export const Experience = () => {
                 return (
                   <li
                     key={companyName + id}
-                    className="experience-list__item md:text-xs ex-sm:text-base"
+                    className="experience-list__item md:text-xs ex-sm:text-base w-full"
                   >
                     <button
-                      className={`experience-list__btn dark:text-[#8892b0] ${
-                        activeRes ? "-active" : " "
-                      } dark: hover:bg-[#15213E] hover:text-[#64ffda] py-2 px-4`}
+                      className={`
+                      experience-list__btn${
+                        activeRes
+                          ? "-active text-black dark:text-[#64ffda]"
+                          : " text-black dark:text-[#a8b2d1] "
+                      } 
+                      dark:border-l-2
+                      dark:hover:bg-[#15213E] 
+                      dark:hover:text-[#64ffda] py-2 px-4`}
                       onClick={() => {
                         setSelectedCompany(ExperienceData[index]);
                       }}
@@ -57,13 +63,13 @@ export const Experience = () => {
           </ul>
           <div className="experience-data">
             <h3 className="experience-data__header md:text-base">
-              <span className="experience-data__header-role">
+              <span className="text-black dark:text-[#ccd6f6]">
                 {selectedCompany.jobRole}
               </span>{" "}
-              <span className="experience-data__header-at">@</span>{" "}
+              <span className="text-black dark:text-[#a8b2d1]">@</span>{" "}
               <a
                 href={`${selectedCompany.linkForCompany}`}
-                className="experience-data__header-link"
+                className="experience-data__header-link text-black dark:text-[#64ffda]"
                 target={"_blank"}
                 rel="noreferrer"
               >
@@ -81,21 +87,19 @@ export const Experience = () => {
             </div>
             {/* resps -> responsibilities */}
             <div className="experience-resps">
-              {selectedCompany.responsibilities.map(
-                (data: string, index: number) => {
-                  return (
-                    <p
-                      className="experience-data__resps items-start flex gap-4 py-2 md:text-justify md:text-sm ex-sm:text-left"
-                      key={data}
-                    >
-                      <span className="flex justify-start pt-1 md:text-xl">
-                        <DotArrow />
-                      </span>
-                      {data}
-                    </p>
-                  );
-                }
-              )}
+              {selectedCompany.responsibilities.map((data: string) => {
+                return (
+                  <p
+                    className="text-black dark:text-[#a8b2d1] items-start flex gap-4 py-2 md:text-justify md:text-sm ex-sm:text-left"
+                    key={data}
+                  >
+                    <span className="flex justify-start pt-1 md:text-xl ex-sm:text-lg">
+                      <DotArrow />
+                    </span>
+                    {data}
+                  </p>
+                );
+              })}
             </div>
           </div>
         </div>
