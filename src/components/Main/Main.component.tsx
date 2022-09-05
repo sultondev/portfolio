@@ -2,7 +2,7 @@ import AboutMe from "./MainComponents/AboutMe.component";
 import { Articles } from "./MainComponents/Articles.component";
 import { MainWelcome } from "./MainComponents/MainWelcome.component";
 import "./Main.style.css";
-import { Projects } from "./MainComponents/Projects.component";
+import { Contacts } from "./MainComponents/Contacts.component";
 import { Experience } from "./MainComponents/Experience.component";
 
 const Main = () => {
@@ -21,8 +21,8 @@ const Main = () => {
       {/* articels */}
       <Articles />
 
-      {/* <!-- projects --> */}
-      <Projects />
+      {/* <!-- Contacts --> */}
+      <Contacts />
     </main>
   );
 };

@@ -1,10 +1,3 @@
-const NavBarData = [
-  "Home",
-  "About",
-  "Experience",
-  "Articles",
-  "Projects",
-  "Contact",
-];
+const NavBarData = ["Home", "About", "Experience", "Articles", "Contact"];
 
 export default NavBarData;
