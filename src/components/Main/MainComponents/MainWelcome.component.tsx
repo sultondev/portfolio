@@ -18,7 +18,7 @@ export const MainWelcome = () => {
           ex-sm:justify-center
           md:justify-between items-center h-[80vh]  mx-auto
           md:flex-row
-          lg:px-6
+          lg:px-6 
           xl:px-4
       "
       >
